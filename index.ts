@@ -1,7 +1,13 @@
 import axios from "axios";
 
-const url = "https://jsonplaceholder.typicode.com/todos/1";
+import variables from "./src/annotations_inference/variables";
+import functions from "./src/annotations_inference/functions";
+import objects from "./src/annotations_inference/objects";
+import arrays from "./src/annotations_inference/arrays";
+import tuples from "./src/annotations_inference/tuples";
 
-axios.get(url).then((response) => {
-  console.log("Response", response.data);
-});
+variables();
+functions();
+objects();
+arrays();
+tuples();
